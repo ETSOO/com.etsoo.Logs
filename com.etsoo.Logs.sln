@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.etsoo.Logs", "com.etsoo.Logs\com.etsoo.Logs.csproj", "{EA6622E9-88A5-43BF-BCCE-69FEDBF4C343}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA6622E9-88A5-43BF-BCCE-69FEDBF4C343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6622E9-88A5-43BF-BCCE-69FEDBF4C343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6622E9-88A5-43BF-BCCE-69FEDBF4C343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6622E9-88A5-43BF-BCCE-69FEDBF4C343}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00EAD1CA-4C82-4E6E-B69D-1BC55600DFC5}
+	EndGlobalSection
+EndGlobal
