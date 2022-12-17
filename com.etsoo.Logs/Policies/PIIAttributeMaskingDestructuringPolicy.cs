@@ -1,9 +1,8 @@
-﻿using com.etsoo.Logs.Attributes;
+﻿using com.etsoo.Utils.Serialization;
 using Serilog.Core;
 using Serilog.Events;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
-using System.Text.Json.Serialization;
 
 namespace com.etsoo.Logs.Policies
 {
@@ -16,9 +15,9 @@ namespace com.etsoo.Logs.Policies
         public bool TryDestructure(object value, ILogEventPropertyValueFactory propertyValueFactory, [NotNullWhen(true)] out LogEventPropertyValue? result)
         {
             var type = value.GetType();
-            if (type.GetCustomAttribute<PIIAttribute>() != null || type.GetCustomAttribute<JsonIgnoreAttribute>() != null)
+            if (type.GetCustomAttribute<PIIAttribute>(true) != null)
             {
-                result = new ScalarValue("***");
+                result = new ScalarValue(SerializationExtensions.Mask);
                 return true;
             }
 
