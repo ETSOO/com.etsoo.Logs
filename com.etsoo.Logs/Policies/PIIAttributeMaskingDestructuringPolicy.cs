@@ -17,7 +17,7 @@ namespace com.etsoo.Logs.Policies
             var type = value.GetType();
             if (type.GetCustomAttribute<PIIAttribute>(true) != null)
             {
-                result = new ScalarValue(SerializationExtensions.Mask);
+                result = new ScalarValue("***");
                 return true;
             }
 
